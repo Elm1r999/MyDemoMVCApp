@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
@@ -96,7 +94,7 @@ namespace MyDemoMVCApp.Controllers
         }
 
         // ********************** DELETE EMPLOYEE DETAILS *******************
-        public bool DeleteStudent(int id)
+        public bool DeleteEmployee(int id)
         {
             connection();
             SqlCommand cmd = new SqlCommand("DeleteEmployee", con);

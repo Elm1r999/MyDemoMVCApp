@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
 using MyDemoMVCApp.Models;
 
@@ -82,7 +80,7 @@ namespace MyDemoMVCApp.Controllers
             try
             {
                 EmployeeDbHandler dbHandler = new EmployeeDbHandler();
-                if (dbHandler.DeleteStudent(id))
+                if (dbHandler.DeleteEmployee(id))
                 {
                     ViewBag.AlertMsg = "Employee Deleted Successfully";
                 }
